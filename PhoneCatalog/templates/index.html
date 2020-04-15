@@ -1,0 +1,17 @@
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Телефонный справочник</h1>
+<hr/>
+{%  for record in all %}
+    <p>{{ record.Name }}</p>
+    <p>{{ record.RegDate }}</p>
+    <p>{{ record.Address }}</p>
+    <p>{{ record.Phone }}</p>
+    <hr/>
+{% endfor %}
+<hr/>
+<hr/>
+</body>
+</html>
